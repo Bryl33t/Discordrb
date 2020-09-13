@@ -2,7 +2,7 @@ ENV["DISCORDRB_NONACL"] = "1" # initialise environnment variable for windows
 
 require 'discordrb' # import discordrb module
 
-client = Discordrb::Commands::CommandBot.new token: "NzU0NDEyNTA4MTY0MzkwOTQy.X10XZg.eUbboQGhdsU0SoTOoXY_9IXREYo", prefix: "./" # instance of CommandBot object token: "token", prefix: ./
+client = Discordrb::Commands::CommandBot.new token: "YOUR_TOKEN", prefix: "./" # instance of CommandBot object token: "token", prefix: ./
 
 client.command :test do |event_command| #command without arguments test
   event_command.respond("Hello world") #when you type ./test the bot send "Hello world"
